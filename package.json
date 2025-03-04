@@ -1,0 +1,49 @@
+{
+  "name": "libgpiod2-node",
+  "version": "0.1.0",
+  "description": "Node.js wrapper for libgpiod 2 C++ API",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "install": "node-gyp rebuild",
+    "prepare": "npm run build",
+    "example:basic": "node dist/examples/basic-usage.js",
+    "example:advanced": "node dist/examples/advanced-usage.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gpio",
+    "libgpiod",
+    "linux",
+    "embedded",
+    "raspberry-pi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "@types/bindings": "^1.5.0",
+    "node-addon-api": "^7.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "node-gyp": "^10.0.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "gypfile": true,
+  "files": [
+    "dist",
+    "src",
+    "binding.gyp",
+    "scripts",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ]
+}
