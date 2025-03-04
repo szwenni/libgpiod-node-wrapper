@@ -24,7 +24,7 @@ A Node.js wrapper for the libgpiod 2 C++ API. This library provides an easy-to-u
 # Install libgpiod development headers (on Debian/Ubuntu)
 sudo apt-get install libgpiod-dev
 
-# Install the package
+# Install the package (not wokrking currently as I did not publish anything)
 npm install libgpiod2-node
 ```
 
