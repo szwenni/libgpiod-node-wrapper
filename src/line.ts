@@ -7,7 +7,7 @@ import { LineConfig } from './line-config.js';
 import { LineRequest } from './line-request.js';
 
 // Load native addon
-const addon = bindings('gpiod2');
+const addon = bindings('gpiod2-node-gyp');
 
 // Validation schema for line constructor
 const lineSchema = z.object({

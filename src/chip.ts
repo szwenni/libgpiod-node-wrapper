@@ -5,7 +5,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 // Load native addon
-const addon = bindings('gpiod2');
+const addon = bindings('gpiod2-node-gyp');
 
 // Validation schema for chip constructor
 const chipSchema = z.object({

@@ -1,11 +1,21 @@
-# libgpiod2-node
+# DISCLAIMER
+
+This library is a work in progress.
+It may have bugs, and it may not follow the best practices for a library.
+
+Please report any issues you find, and help me improve the library by submitting pull requests or at least a issue. I'm not forcing anybody to use any template for a issue, just describe the bug and the output you are getting. Pull request is always better, you know it :)
+
+I'm not responsible for any damage caused by using this library. Use with caution, but I was not able to break anything till now.
+
+
+# libgpiod2-node-wrapper
 
 A Node.js wrapper for the libgpiod 2 C++ API. This library provides an easy-to-use interface for GPIO manipulation on Linux systems, similar to the [onoff](https://www.npmjs.com/package/onoff) library but using the modern libgpiod 2 API.
 
 ## Requirements
 
 - Node.js >= 16.0.0
-- libgpiod 2.x development headers
+- libgpiod 2+ development headers
 - A C++ compiler compatible with C++17
 
 ## Installation

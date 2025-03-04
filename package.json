@@ -1,5 +1,5 @@
 {
-  "name": "libgpiod2-node",
+  "name": "libgpiod-node-wrapper",
   "version": "0.1.0",
   "description": "Node.js wrapper for libgpiod 2 C++ API",
   "type": "module",

@@ -2,7 +2,7 @@ import bindings from 'bindings';
 import { Direction, Edge, Drive, Bias, Value } from './enums.js';
 
 // Load native addon
-const addon = bindings('gpiod2');
+const addon = bindings('gpiod2-node-gyp');
 
 /**
  * Configuration for a GPIO line

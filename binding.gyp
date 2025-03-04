@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "gpiod2",
+      "target_name": "gpiod2-node-gyp",
       "cflags!": [ "-fno-exceptions" ],
       "cflags_cc!": [ "-fno-exceptions" ],
       "sources": [ 

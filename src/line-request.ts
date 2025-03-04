@@ -4,7 +4,7 @@ import { Chip } from './chip.js';
 import { LineConfig } from './line-config.js';
 
 // Load native addon
-const addon = bindings('gpiod2');
+const addon = bindings('gpiod2-node-gyp');
 
 // Validation schema for line request constructor
 const lineRequestSchema = z.object({
