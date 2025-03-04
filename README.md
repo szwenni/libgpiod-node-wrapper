@@ -159,4 +159,4 @@ process.on('SIGINT', () => {
 
 ## License
 
-MIT
+LGPL-2.1
