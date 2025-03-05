@@ -3,6 +3,7 @@ import bindings from 'bindings';
 import { Line } from './line.js';
 import * as fs from 'fs';
 import * as path from 'path';
+import { access, constants } from 'fs/promises';
 
 // Load native addon
 const addon = bindings('gpiod2-node-gyp');
@@ -51,6 +52,20 @@ export class Chip {
     }
   }
 
+  /**
+   * Checks if a GPIO chip is accessible
+   * @param chipPath The path to the GPIO chip (e.g., '/dev/gpiochip0')
+   * @returns True if the chip is accessible, false otherwise
+   */
+  
+  static async isAccessible(chipPath: string): Promise<boolean> {
+    try {
+      await access(chipPath, constants.R_OK | constants.W_OK);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
   /**
    * Gets the name of the chip
    */

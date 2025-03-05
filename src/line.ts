@@ -173,7 +173,7 @@ export class Line extends EventEmitter {
 
   /**
    * Sets the debounce period
-   * @param debouncePeriod The debounce period
+   * @param debouncePeriod The debounce period in microseconds
    */
   setDebouncePeriod(debouncePeriod: number): void {
     this._debouncePeriod = debouncePeriod;
